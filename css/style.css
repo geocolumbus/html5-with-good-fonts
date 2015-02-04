@@ -26,11 +26,14 @@ footer.page-footer {
 }
 
 article {
-    width: 61%;
+    width: 63%;
     float: left;
     overflow: hidden;
-    padding: 6px 2%;
     margin-left: 5%;
+    padding-right: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 2%;
 }
 
 aside {
