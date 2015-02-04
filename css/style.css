@@ -1,0 +1,104 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(85, 85, 85);
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Slab';
+    text-rendering: optimizeLegibility;
+    color: rgb(60,60,60);
+}
+
+header.page-header, footer.page-footer {
+    width: 86%;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+    padding: 6px 2%;
+}
+
+header.page-header {
+    border-bottom: 3px solid rgb(155,155,155);
+}
+
+footer.page-footer {
+    border-top: 3px solid rgb(155,155,155);
+}
+
+article {
+    width: 61%;
+    float: left;
+    overflow: hidden;
+    padding: 6px 2%;
+    margin-left: 5%;
+}
+
+aside {
+    width: 18%;
+    float: right;
+    overflow: hidden;;
+    padding: 6px 2%;
+    margin-right: 5%;
+    margin-left: 2%;
+    border-left: 1px solid rgb(155,155,155);
+    margin-top: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 0.9em;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+a {
+    color: rgb(85,85,85);
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+
+a:hover {
+    color: royalblue;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+
+/* Tweaks for iPhone and Android phones */
+@media only screen and (max-device-width: 480px) {
+    article,aside,header.page-header, footer.page-footer {
+        width: 90%;
+        margin-left: 3%;
+        clear:both;
+    }
+
+    header.page-header, footer.page-footer {
+        padding-top:0;
+        padding-bottom:0;
+    }
+
+    h1,h2,h3 {
+        margin-top:0;
+        margin-bottom: 10px;
+        padding:0;
+        text-rendering:auto;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+
+    p {
+        font-size: 1.4em;
+        line-height: 1.3em;
+    }
+
+    aside {
+        padding-top: 0px;
+        margin-top: 0px;
+        border:none;
+        border-top: 1px solid rgb(155,155,155);
+        padding-bottom: 0;
+    }
+}
