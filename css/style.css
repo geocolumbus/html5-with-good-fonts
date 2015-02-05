@@ -1,3 +1,7 @@
+/* Reset CSS */
+@import url(http://reset5.googlecode.com/hg/reset.min.css);
+
+/* Begin my CSS */
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: rgb(85, 85, 85);
@@ -9,16 +13,20 @@ h1, h2, h3 {
     color: rgb(60,60,60);
 }
 
-header.page-header, footer.page-footer {
-    width: 86%;
+header.page-header, footer.page-footer, nav {
+    width: 90%;
     margin-left: 5%;
     margin-right: 5%;
     overflow: hidden;
-    padding: 6px 2%;
 }
 
-header.page-header {
-    border-bottom: 3px solid rgb(155,155,155);
+nav ul {
+    margin:0;
+    padding:0;
+}
+
+nav li {
+    display:inline-block;
 }
 
 footer.page-footer {
@@ -26,14 +34,10 @@ footer.page-footer {
 }
 
 article {
-    width: 63%;
+    width: 65%;
     float: left;
     overflow: hidden;
     margin-left: 5%;
-    padding-right: 0;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 2%;
 }
 
 aside {
@@ -44,9 +48,6 @@ aside {
     margin-right: 5%;
     margin-left: 2%;
     border-left: 1px solid rgb(155,155,155);
-    margin-top: 70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 p {
@@ -73,28 +74,6 @@ a:hover {
         width: 90%;
         margin-left: 3%;
         clear:both;
-    }
-
-    header.page-header, footer.page-footer {
-        padding-top:0;
-        padding-bottom:0;
-    }
-
-    h1,h2,h3 {
-        margin-top:0;
-        margin-bottom: 10px;
-        padding:0;
-        text-rendering:auto;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-
-
-    p {
-        font-size: 1.4em;
-        line-height: 1.3em;
     }
 
     aside {
