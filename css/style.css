@@ -10,7 +10,23 @@ body {
 h1, h2, h3 {
     font-family: 'Roboto Slab';
     text-rendering: optimizeLegibility;
-    color: rgb(60,60,60);
+    color: rgb(60, 60, 60);
+}
+
+h1 {
+    margin: 15px 0px;
+    font-size: 2em;
+    border-top-left-radius: 9px;
+}
+
+h2 {
+    font-size: 1.6em;
+    margin: 12px 0px;
+}
+
+h3 {
+    font-size: 1.3em;
+    margin: 8px 0px;
 }
 
 header.page-header, footer.page-footer, nav {
@@ -20,17 +36,46 @@ header.page-header, footer.page-footer, nav {
     overflow: hidden;
 }
 
-nav ul {
-    margin:0;
-    padding:0;
+footer.page-footer {
+    border-bottom-left-radius: 9px;
+    margin-bottom:20px;
+}
+
+h1, footer.page-footer {
+    padding: 6px 12px;
+
+    background: -webkit-linear-gradient(right, lightcoral, #fff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, lightcoral, #fff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, lightcoral, #fff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, lightblue, #fff); /* Standard syntax */
+}
+
+nav {
+    margin: 6px 5%;
+    margin-bottom: 0;
 }
 
 nav li {
-    display:inline-block;
+    display: inline-block;
+    padding-bottom: 2px;
+    cursor: pointer;
+    padding: 2px 4px;
+    padding-bottom: 4px;
+    border-radius: 6px;
 }
 
-footer.page-footer {
-    border-top: 3px solid rgb(155,155,155);
+nav li:hover {
+    color: black;
+    background-color: lightcoral;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+p {
+    margin-bottom: 10px;
+    text-indent: 2em;
+    line-height: 1.5em;
+    text-align: justify;
 }
 
 article {
@@ -47,40 +92,52 @@ aside {
     padding: 6px 2%;
     margin-right: 5%;
     margin-left: 2%;
-    border-left: 1px solid rgb(155,155,155);
+    border-left: 1px solid rgb(155, 155, 155);
 }
 
-p {
+aside p {
     font-size: 0.9em;
     line-height: 1.3em;
-    text-align: justify;
+    text-align: left;
 }
 
 a {
-    color: rgb(85,85,85);
+    color: rgb(85, 85, 85);
     -webkit-transition: color 1s;
     transition: color 1s;
 }
 
 a:hover {
-    color: royalblue;
-    -webkit-transition: color 1s;
-    transition: color 1s;
+    color: blue;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+img.img-left {
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+img.img-right {
+    float: right;
+    margin-left: 8px;
+    margin-bottom: 2px;
 }
 
 /* Tweaks for iPhone and Android phones */
 @media only screen and (max-device-width: 480px) {
-    article,aside,header.page-header, footer.page-footer {
+    article, aside, header.page-header, footer.page-footer {
         width: 90%;
         margin-left: 3%;
-        clear:both;
+        clear: both;
     }
 
     aside {
         padding-top: 0px;
         margin-top: 0px;
-        border:none;
-        border-top: 1px solid rgb(155,155,155);
+        border: none;
+        border-top: 1px solid rgb(155, 155, 155);
         padding-bottom: 0;
     }
 }
